@@ -1,0 +1,9 @@
+v0.0.1:
+  date: 2015-08-12
+  changes:
+    - The module supports the following initial operations:
+      * getFileInfo
+      * fileExists
+      * uploadFile
+      * downloadFile
+    - This Artifactoty API module is complaint with Artifactory 3.X
