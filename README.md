@@ -18,7 +18,7 @@ You need to provide basic http credentials when creating a new instance. Just pr
 ## Actions
 All actions return a [Q Promise](https://github.com/kriskowal/q).
 
-###getFileInfo(repoKey, remotefilePath)
+### getFileInfo(repoKey, remotefilePath)
 Provides all the info related to a file in a json object. You need to provide the repoKey and the path to the file.
 
 API: [FileInfo](http://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API#ArtifactoryRESTAPI-FileInfo)
@@ -117,7 +117,7 @@ artifactory.downloadFile('libs-release-local', '/my/jar/1.0/jar-1.0.jar', '/User
 ```
 The result object returned as part of the promise resolution is just a string indicating the final result of the operation.
 
-###fileExists(repoKey, remotefilePath)
+### fileExists(repoKey, remotefilePath)
 Verifies if the file exists in the server. You need to provide the repoKey and the path to the file in the server.
 
 API: [RetrieveArtifact](http://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API#ArtifactoryRESTAPI-RetrieveArtifact) but only asking for the **HEAD** instead of doing a **GET**.
