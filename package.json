@@ -9,9 +9,13 @@
   },
   "author": {
     "name": "Christian Adam",
-    "email" : "christian.g.adam@gmail.com"
+    "email": "christian.g.adam@gmail.com"
   },
- "license": "MIT",
+  "contributors": [{
+    "name": "William Beard",
+    "email": "disenno@gmail.com"
+  }],
+  "license": "MIT",
   "keywords": [
     "Artifactory",
     "REST API",
@@ -25,7 +29,7 @@
     "underscore": "1.8.3",
     "q": "1.4.1",
     "request": "2.58.0",
-    "md5-file" : "2.0.3"
+    "md5-file": "2.0.3"
   },
   "bugs": {
     "url": "https://github.com/cgadam/artifactory-api/issues"

@@ -7,3 +7,13 @@ v0.0.1:
       * uploadFile
       * downloadFile
     - This Artifactoty API module is complaint with Artifactory 3.X
+
+v0.0.2:
+  date: 2015-08-18
+  changes:
+    - Fix issue where fileExists was checking for the incorrect HTTP Return Code.
+
+v0.0.3:
+  date: 2015-08-21
+  changes:
+    - Fix incorrectly named response variable in downloadFile 
