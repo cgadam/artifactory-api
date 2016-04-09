@@ -60,7 +60,7 @@ API: [FileInfo](http://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API
   ```
   All this info will be available in the *fileInfoJson* object that is returned as part of the promise resolution.
 
-### uploadFile(repoKey, remotefilePath, localfilePath, forceUpload)
+### uploadFile(repoKey, remotefilePath, fileToUploadPath, forceUpload, checksums)
 Uploads a file to artifactory. All you need to provide is the repoKey, the remote path where you want to upload the file and the local path of the file you want to upload. If the file already exists in the server it will fail unless you provide the forceUpload flag with a true value. In that case, it will overwite the file in the server.
 
 API: [DeployArtifact](http://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API#ArtifactoryRESTAPI-DeployArtifact)
