@@ -134,3 +134,22 @@ artifactory.fileExists('libs-release-local', '/my/jar/1.0/jar-1.0.jar').then(fun
   console.log('ERROR: ' + err);
 });
 ```
+
+### uploadBuild(buildInfo)
+Uploads build information to the server. You must provide the build.json object as a parameter.
+
+API: [BuildUpload](https://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API#ArtifactoryRESTAPI-BuildUpload)
+
+[Extra build.json Documentation](https://github.com/JFrogDev/build-info#build-info-json-format)
+
+Usage example:
+```javascript
+var artifactory = new ArtifactoryAPI('http://localhost:8080', 'dXNlcjpwYXNzd29yZA==');
+artifactory.uploadBuild({version: '1.0.1', 'name': 'myBuild', 'number': 1234})
+  .then(function () {
+    console.log('It Worked!'); // There is no content returned from this call if it passes.
+  })
+  .fail(function (err) {
+    console.log('ERROR: ' + err);
+  });
+```
