@@ -1,6 +1,6 @@
 {
   "name": "artifactory-api",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A module for interacting with Artifactory API",
   "main": "index.js",
   "repository": {
@@ -28,11 +28,10 @@
     "js"
   ],
   "dependencies": {
-    "crypto": "^1.0.1",
-    "md5-file": "2.0.3",
-    "q": "1.4.1",
-    "request": "2.58.0",
-    "underscore": "1.8.3"
+    "md5-file": "^5.0.0",
+    "q": "^1.5.1",
+    "request": "^2.88.2",
+    "underscore": "^1.13.2"
   },
   "bugs": {
     "url": "https://github.com/cgadam/artifactory-api/issues"
