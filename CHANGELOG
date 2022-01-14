@@ -17,3 +17,9 @@ v0.0.3:
   date: 2015-08-21
   changes:
     - Fix incorrectly named response variable in downloadFile 
+
+v0.0.4:
+  date: 2022-01-14
+  changes:
+    - Update vulnerable dependencies
+
